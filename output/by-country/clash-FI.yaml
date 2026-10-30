@@ -16,28 +16,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.21.52.113
-  port: 53731
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.211.81
-  port: 465
+  server: fi-1.bnc-gt.co.uk
+  port: 443
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  flow: xtls-rprx-vision
   tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  reality-opts:
+    public-key: CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0
+    short-id: 7be1e9c243451b14
+  servername: b.fi-1.bnc-gt.co.uk
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.210.221
   port: 465
   udp: true
@@ -52,19 +43,27 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 153.76.194.118
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 45.144.52.187
-  port: 443
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
-  servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 78.17.27.137
   port: 8443
@@ -78,20 +77,24 @@ proxies:
   servername: www.aalto.fi
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 77.42.12.225
-  port: 443
+  server: 45.38.143.210
+  port: 30584
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
   tls: true
   reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+    short-id: 67ece882d65d0f1a
+  servername: m.vk.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 65.21.52.113
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,6 +107,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +120,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
