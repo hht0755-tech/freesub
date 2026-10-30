@@ -5,39 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: free.ertebatgoostar.ir
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -51,6 +18,48 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: free.ertebatgoostar.ir
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: 5.202.4.8
+  port: 5066
+  udp: true
+  type: vless
+  uuid: 6ba8077f-0e37-44d8-b6e0-c3b1871fe439
+  tls: true
+  reality-opts:
+    public-key: LTA0C-rWwGeaNv3oHvYti-zGGhVu4mo_8xyoEM34n3s
+    short-id: c849e1d5d92374
+  servername: api.receptivity.io
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 206.1.96.108
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +69,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +79,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
