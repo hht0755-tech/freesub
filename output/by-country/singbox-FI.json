@@ -20,21 +20,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "fi-1.bnc-gt.co.uk",
-      "server_port": 443,
-      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
+      "server": "31.77.199.147",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "b.fi-1.bnc-gt.co.uk",
+        "server_name": "images.unsplash.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0",
-          "short_id": "7be1e9c243451b14"
+          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
+          "short_id": "7da2eae792187ab9"
         }
       }
     },
@@ -65,41 +65,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "153.76.194.118",
-      "server_port": 8443,
-      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.biznes.lol",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
       "server": "78.17.27.137",
       "server_port": 8443,
       "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
@@ -118,32 +85,45 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
-      "server": "45.38.143.210",
-      "server_port": 30584,
-      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "153.76.194.118",
+      "server_port": 8443,
+      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
       "tls": {
         "enabled": true,
-        "server_name": "m.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
-          "short_id": "67ece882d65d0f1a"
-        }
+        "server_name": "finland.biznes.lol",
+        "insecure": false
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
       "server": "65.21.52.113",
       "server_port": 53731,
       "method": "chacha20-ietf-poly1305",
       "password": "QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
+      "server": "webdisk.jaggyslawa.org",
+      "server_port": 443,
+      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "dda5f542d835"
+        }
+      }
     },
     {
       "type": "selector",
@@ -156,8 +136,7 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
         "🇫🇮 芬兰 (Finland) 05 - xiaohe",
         "🇫🇮 芬兰 (Finland) 06 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 07 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 08 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ]
     },
     {
@@ -170,8 +149,7 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
         "🇫🇮 芬兰 (Finland) 05 - xiaohe",
         "🇫🇮 芬兰 (Finland) 06 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 07 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 08 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
