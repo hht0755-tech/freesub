@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇴 MO 01 - xiaohe
-  server: mo01.dw.sh-cloudflare.sbs
-  port: 11107
+- name: 🇦🇱 AL 01 - xiaohe
+  server: 151.123.187.198
+  port: 443
   udp: true
   type: vless
-  uuid: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71
+  uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg
-    short-id: 9433bfa1
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: safari
+    public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
+    short-id: 8718c58d3d51db59
+  servername: al2.magazinnarubeva.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇴 MO 01 - xiaohe
+  - 🇦🇱 AL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇴 MO 01 - xiaohe
+  - 🇦🇱 AL 01 - xiaohe
 rules:
 - MATCH,PROXIES
