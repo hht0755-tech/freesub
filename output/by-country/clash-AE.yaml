@@ -5,55 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: a6b7c8ec-3822-4ada-90b2-d69cbe8d3067
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 185.253.116.33
-  port: 14430
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 91.132.48.199
+  port: 443
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
+  uuid: 0d607d84-0ae0-4b9c-a4f3-1766ab456e02
+  flow: xtls-rprx-vision
   tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: _0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM
+    short-id: e7c5f2a9
+  servername: bunny.net
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -62,22 +36,12 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 217.60.73.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 89.22.224.146
-  port: 43788
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
-  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
+  uuid: 91cf01c5-62c1-44cd-80e0-df6310025dab
   tls: true
   servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
@@ -87,19 +51,25 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 31.76.227.57
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 217.60.73.56
   port: 443
   udp: true
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 84.235.244.108
+  port: 22573
+  udp: true
   type: vless
-  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
-    short-id: a7856800c2deb7b2
-  servername: assets-mi-26.spbstudentlife.com
-  client-fingerprint: firefox
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,8 +81,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,7 +92,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 rules:
 - MATCH,PROXIES
