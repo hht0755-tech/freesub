@@ -17,19 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -47,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
