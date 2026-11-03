@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "hy2.aspidnet.xyz",
+      "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {

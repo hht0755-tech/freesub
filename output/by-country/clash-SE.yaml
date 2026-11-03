@@ -13,24 +13,29 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: se.mimowhat.online
-  port: 443
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 5.178.109.174
-  port: 14430
+  server: 193.25.216.31
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 194.104.94.141
   port: 443
@@ -42,31 +47,26 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 144.31.129.174
+  server: se.mimowhat.online
   port: 443
   udp: true
-  type: vless
-  uuid: 6f34a071-9a87-001e-b01a-4b5a5c95e552
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M
-    short-id: 20ed7ee26095771b
-  servername: s3-fi-1.rucdn777.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 769f34f0-1500-488f-b414-03bc90666502
+  sni: se.mimowhat.online
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: sw.golangwikito.cfd
+  server: 185.153.55.23
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: ios
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: assets-v2.porsche.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
