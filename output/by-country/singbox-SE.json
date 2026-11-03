@@ -16,24 +16,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "sw.golangwikito.cfd",
+      "server": "se.mimowhat.online",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
-        }
+        "server_name": "se.mimowhat.online",
+        "insecure": false
       }
     },
     {
@@ -51,63 +42,64 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "se3.shtil.io",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "194.104.94.141",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
       "tls": {
         "enabled": true,
         "server_name": "se3.shtil.io",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "se.mimowhat.online",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "144.31.129.174",
       "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "uuid": "6f34a071-9a87-001e-b01a-4b5a5c95e552",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "se.mimowhat.online",
-        "insecure": false
+        "server_name": "s3-fi-1.rucdn777.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M",
+          "short_id": "20ed7ee26095771b"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "swidenafterlanzerotte.space",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "sw.golangwikito.cfd",
       "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "swidenafterlanzerotte.space",
+        "server_name": "sw.golangwikito.cfd",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
         }
       }
     },
@@ -121,8 +113,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ]
     },
     {
@@ -134,8 +125,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

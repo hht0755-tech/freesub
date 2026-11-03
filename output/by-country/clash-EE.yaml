@@ -37,7 +37,7 @@ proxies:
     public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
     short-id: 2ef2b10d5143d798
   servername: mirror-50.topp-con.xyz
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
