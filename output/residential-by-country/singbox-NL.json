@@ -5,17 +5,27 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
-      "server": "64.176.7.205",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
+      "server": "104.17.148.22",
+      "server_port": 8443,
+      "password": "uFepQ5r4JSusbY",
       "tls": {
         "enabled": true,
-        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
+        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
         }
       }
     },
@@ -24,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
