@@ -6,24 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
-  port: 9052
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 2.26.255.215
-  port: 443
+  server: 217.30.10.44
+  port: 9095
   udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 217.30.10.72
   port: 443
@@ -63,7 +57,7 @@ proxies:
   port: 8444
   udp: true
   type: vless
-  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
   tls: true
   servername: pl1.meshbeat.online
   skip-cert-verify: false
@@ -74,19 +68,6 @@ proxies:
     headers:
       Host: pl1.meshbeat.online
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -99,6 +80,18 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  server: 84.23.52.120
+  port: 28449
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lovelive
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 84.23.52.120
   port: 28453
@@ -112,6 +105,31 @@ proxies:
   network: ws
   ws-opts:
     path: /lovelive
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: 84.23.52.120
+  port: 28450
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lovelive
+- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
+  server: tfhx4tjzmy39benjh0hg.sellerape.cc
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03929684-0dcf-4add-bb02-2b2ba09d10a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kamryj_IUYECmozGabqUqauA0k0QpVUEPSBSEKi-ED0
+  servername: tfhx4tjzmy39benjh0hg.sellerape.cc
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +144,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,5 +160,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 rules:
 - MATCH,PROXIES
