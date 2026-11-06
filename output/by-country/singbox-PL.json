@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "217.30.10.72",
+      "server": "94.249.180.86",
       "server_port": 443,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "images.porsche.com",
+        "server_name": "amd.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         }
       }
     },
@@ -60,27 +60,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "94.249.180.86",
-      "server_port": 443,
-      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "145.63.143.205",
       "server_port": 8444,
       "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
@@ -103,50 +82,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "lte-v2-ws.gacvpn.site",
+      "server_port": 8443,
+      "uuid": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
+        "server_name": "lte-v2-ws.gacvpn.site",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/static/js/runtime.9d03c7.js",
         "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+          "Host": "lte-v2-ws.gacvpn.site"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
-      "server": "201.10.91.31",
-      "server_port": 1080,
-      "method": "aes-256-gcm",
-      "password": "FJo_V-KMvriDekN0CYkdNH0C"
     },
     {
       "type": "selector",
@@ -157,10 +112,7 @@
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
         "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 05 - xiaohe"
       ]
     },
     {
@@ -171,10 +123,7 @@
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
         "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

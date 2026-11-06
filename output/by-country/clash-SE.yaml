@@ -53,6 +53,14 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -65,7 +73,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   server: sw.golangwikito.cfd
   port: 443
   udp: true
@@ -78,16 +86,8 @@ proxies:
     short-id: a1037b25dcef6aa7
   servername: sw.golangwikito.cfd
   client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
@@ -95,7 +95,7 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
