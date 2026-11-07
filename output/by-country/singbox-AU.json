@@ -6,18 +6,6 @@
     {
       "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "au001.zestapp778.com",
       "server_port": 54374,
       "password": "5t6i121em5lkmsmk",
@@ -29,7 +17,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -44,37 +32,32 @@
       }
     },
     {
-      "type": "anytls",
+      "type": "shadowsocks",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "catnet-other.kunlun04dns.com",
+      "server_port": 28048,
+      "method": "aes-128-gcm",
+      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
+    },
+    {
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "user02.godvpn.lol",
-      "server_port": 62405,
-      "password": "4bbfa33a-449a-4a50-8dfc-6d0de880f7bc",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "user02.godvpn.lol",
-        "insecure": true
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-      "server": "dddz-3-z.473221.xyz",
-      "server_port": 33162,
-      "uuid": "65ec84f5-0dd4-4582-8b4f-592e50b22116",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "download-porter.hoyoverse.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Qp9_bpGExQK_h5LMXLLwVA2o1vifMQwGJ6Qh2-X26Ro",
-          "short_id": "3fe1e73fc9ecc8d7"
-        }
-      }
+      "server": "catnet-other.kunlun04dns.com",
+      "server_port": 28047,
+      "method": "aes-128-gcm",
+      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
     },
     {
       "type": "selector",
