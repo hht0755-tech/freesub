@@ -14,26 +14,26 @@ proxies:
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: catnet-other.kunlun04dns.com
-  port: 28041
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: th001.zestapp778.com
-  port: 33079
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: catnet-other.kunlun04dns.com
   port: 28042
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  server: catnet-other.kunlun04dns.com
+  port: 28041
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  server: 38.60.233.126
+  port: 33079
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: th001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
