@@ -51,7 +51,7 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 157.254.38.210
+  server: sclass-00.catcat321.com
   port: 20123
   udp: true
   type: trojan

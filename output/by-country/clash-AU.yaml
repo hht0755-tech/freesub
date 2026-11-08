@@ -31,20 +31,6 @@ proxies:
   sni: au001.zestapp778.com
   skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: catnet-other.kunlun04dns.com
-  port: 28047
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  server: catnet-other.kunlun04dns.com
-  port: 28048
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
-- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   server: user02.godvpn.lol
   port: 62405
   udp: true
@@ -61,8 +47,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +56,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
