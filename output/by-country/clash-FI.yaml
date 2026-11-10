@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -31,6 +15,29 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 84.38.184.87
+  port: 2089
+  udp: true
+  type: vless
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
+  tls: true
+  reality-opts:
+    public-key: TGbaO5ocPEkI3J1M7y_TPvZheJa-N_rL7GSiluX-XB8
+    short-id: '37103087'
+  servername: s3.storage.selcloud.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cas-fi
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 146.103.118.189
   port: 443
@@ -47,18 +54,6 @@ proxies:
     headers:
       Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  tls: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: nele.neobo-tooth.ru
   port: 2053
   udp: true
@@ -71,14 +66,6 @@ proxies:
     short-id: 5e39e518bfac6392
   servername: vk.ru
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,8 +76,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,7 +86,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
