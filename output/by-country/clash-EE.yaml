@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: 216.106.191.201
-  port: 10403
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 5.129.202.80
+  port: 443
   udp: true
   type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
-    short-id: 6aa50b0cc8d23464
-  servername: www.apple.com
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
