@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 52157,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
+      "server": "216.106.191.201",
+      "server_port": 10403,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sTga77Qd2-N5ZLvPPu9nTBg2eKdQ6TJQNmypPnzUHm0",
-          "short_id": "6c62fa"
+          "public_key": "suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ",
+          "short_id": "6aa50b0cc8d23464"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

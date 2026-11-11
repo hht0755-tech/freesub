@@ -12,6 +12,24 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -22,27 +40,8 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   udp: true
   type: vmess
@@ -61,7 +60,7 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
@@ -69,9 +68,9 @@ proxies:
   server: 95.143.196.97
   port: 443
   udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   server: 94.183.234.245
@@ -86,6 +85,24 @@ proxies:
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
   client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
+  server: 62.182.193.228
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +116,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,5 +131,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
 rules:
 - MATCH,PROXIES
