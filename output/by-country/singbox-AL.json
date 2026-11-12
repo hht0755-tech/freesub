@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 52157,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sTga77Qd2-N5ZLvPPu9nTBg2eKdQ6TJQNmypPnzUHm0",
-          "short_id": "6c62fa"
-        }
-      }
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
     },
     {
       "type": "selector",

@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - xiaohe
-  server: 23.95.72.244
-  port: 52157
+  server: dns22.m3hrzd.ir
+  port: 1348
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sTga77Qd2-N5ZLvPPu9nTBg2eKdQ6TJQNmypPnzUHm0
-    short-id: 6c62fa
-  servername: api.adidas.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
 proxy-groups:
 - name: PROXIES
   type: select
