@@ -12,15 +12,24 @@
       "password": "b7I6g7l7fJhBaMInJ+zkzw=="
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-      "server": "160.187.100.109",
+      "server": "35.206.207.63",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "58543a42-b17d-4cc8-8b54-b5465ebaae89",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "off",
-        "insecure": true
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IKnqw4_9CFdnsaLq4kMNhNzub69F3rzCowYNiXbWgTU",
+          "short_id": "ba50b4f2"
+        }
       }
     },
     {
@@ -36,44 +45,34 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 5463,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw",
-          "short_id": "be33ecc1975c"
-        }
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 5462,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "server": "83.147.13.74",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "github.githubassets.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30",
-          "short_id": "4b7a508fcd3ef1a1"
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
         }
       }
     },
