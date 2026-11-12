@@ -4,28 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 130.94.19.95
-  port: 57277
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 23.95.72.244
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
-    short-id: b88b4ed92599c16a
-  servername: api.amazonalexa.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 161.114.15.215
   port: 30502
   udp: true
@@ -33,30 +19,43 @@ proxies:
   password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
   sni: www.cloudflare.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 23.95.72.244
-  port: 5465
+  port: 5463
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
-    short-id: 7024258fb07f5eb5
+    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+    short-id: be33ecc1975c
   servername: api.adidas.com
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   server: 23.95.72.244
-  port: 5467
+  port: 10000
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U
-    short-id: 6e47891d
+    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
+    short-id: 99aa2eb4f2c77af5
+  servername: sellercentral.amazon.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  server: 23.95.72.244
+  port: 52541
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
+    short-id: ce5793a7ad9594
   servername: api.adidas.com
   client-fingerprint: chrome
 proxy-groups:
@@ -64,20 +63,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

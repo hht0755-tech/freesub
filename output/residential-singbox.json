@@ -4,59 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-      "server": "130.94.19.95",
-      "server_port": 57277,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "us001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 2096,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.amazonalexa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4",
-          "short_id": "b88b4ed92599c16a"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "161.114.15.215",
       "server_port": 30502,
       "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
       "server": "23.95.72.244",
-      "server_port": 5465,
+      "server_port": 5463,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -64,20 +39,41 @@
         "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk",
-          "short_id": "7024258fb07f5eb5"
+          "public_key": "8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw",
+          "short_id": "be33ecc1975c"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
       "server": "23.95.72.244",
-      "server_port": 5467,
+      "server_port": 10000,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sellercentral.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
+          "short_id": "99aa2eb4f2c77af5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 (家宽) - xiaohe",
+      "server": "23.95.72.244",
+      "server_port": 52541,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -89,8 +85,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U",
-          "short_id": "6e47891d"
+          "public_key": "_DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs",
+          "short_id": "ce5793a7ad9594"
         }
       }
     },
@@ -99,22 +95,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 05 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 05 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 05 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

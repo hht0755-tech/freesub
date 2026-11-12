@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -32,24 +32,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "au001.zestapp778.com",
-      "server_port": 54374,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "au001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "50.6.54.163",
       "server_port": 443,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -70,7 +54,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
       "server": "v1au.mateflora.com",
       "server_port": 443,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -91,8 +75,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-      "server": "39.109.111.23",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+      "server": "doghkzf.zalolink.com",
       "server_port": 48158,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -119,8 +103,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
       ]
     },
     {
@@ -131,8 +114,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

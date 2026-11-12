@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "in.smrtai.top",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
-        }
-      }
+      "server": "160.236.238.232",
+      "server_port": 543,
+      "method": "chacha20-ietf-poly1305",
+      "password": "xMfen2bSpUYyP3GjXHP_kqLA19L9r1cj"
     },
     {
       "type": "vless",
@@ -46,23 +34,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "85.234.100.32",
+      "server": "178.212.35.198",
       "server_port": 443,
-      "uuid": "c1208c5a-2350-0003-affd-fc41b4319286",
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
         "enabled": true,
-        "server_name": "decdn-28.nome-rkp.net",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/",
-        "headers": {
-          "Host": "decdn-28.nome-rkp.net"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
         }
       }
     },
@@ -74,10 +59,7 @@
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -106,44 +88,21 @@
       "tag": "🇮🇳 印度 (India) 06 - xiaohe",
       "server": "13.140.253.35",
       "server_port": 443,
-      "uuid": "bcd3798c-a56f-6bfc-b738-a17c43bd4a50",
+      "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
       "tls": {
         "enabled": true,
-        "server_name": "xray-m0642ki4-silver-nebula-10.cloady.io",
+        "server_name": "xray-bprkdwje-clever-comet-4.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/362b2b2c7197d648",
+        "path": "/27dbf143acdd7bca",
         "headers": {
-          "Host": "xray-m0642ki4-silver-nebula-10.cloady.io"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - xiaohe",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 08 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "in-152.67.8.205-0204"
+          "Host": "xray-bprkdwje-clever-comet-4.cloady.io"
         }
       }
     },
@@ -157,9 +116,7 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe",
-        "🇮🇳 印度 (India) 07 - xiaohe",
-        "🇮🇳 印度 (India) 08 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ]
     },
     {
@@ -171,9 +128,7 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe",
-        "🇮🇳 印度 (India) 07 - xiaohe",
-        "🇮🇳 印度 (India) 08 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
