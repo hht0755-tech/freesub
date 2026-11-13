@@ -19,24 +19,20 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "vpn-tw-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
