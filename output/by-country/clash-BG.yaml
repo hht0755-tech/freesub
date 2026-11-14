@@ -20,19 +20,12 @@ proxies:
   password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 195.123.226.21
   port: 443
   udp: true
@@ -45,18 +38,6 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: p1real5.greewebservices.ir
-  port: 1270
-  udp: true
-  type: vless
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +47,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,7 +56,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 rules:
 - MATCH,PROXIES

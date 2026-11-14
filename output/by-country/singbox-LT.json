@@ -7,38 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
-      "server": "lt.t1n2.com",
-      "server_port": 443,
-      "uuid": "a94d8907-6bbb-4570-80d3-dfdc314c1e7a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lt.t1n2.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "awc2TGvraH8xMqfsAnNQ7JMQ_uUF8gW5auvU2gQfjR0",
-          "short_id": "b31de5bead2ebf3c"
-        }
-      }
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "selector",
@@ -46,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ]
     },
     {
@@ -55,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
