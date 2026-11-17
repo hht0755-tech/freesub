@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇬 埃及 (Egypt) 01 - xiaohe",
-      "server": "41.196.0.128",
+      "tag": "🇧🇭 BH 01 - xiaohe",
+      "server": "bh1.vpnjantit.com",
       "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "uuid": "b36a16e4-ded8-11f1-bdea-5254b0a2c347",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eg1.gofizz.in",
+        "server_name": "cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tyklNbOfb-FctP-J1OQa1yUHPY9p4co70RyYuRe9nR8",
-          "short_id": "f68db13f"
+          "public_key": "lDEkUokSL-mrM1jsH8UKs8-3cfJMvkxhY7k37iBkFi4",
+          "short_id": "32b72239bc69220e"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
+        "🇧🇭 BH 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
+        "🇧🇭 BH 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
