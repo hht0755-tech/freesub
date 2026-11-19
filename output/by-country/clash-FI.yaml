@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -16,18 +27,7 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 138.124.80.29
   port: 443
@@ -41,36 +41,6 @@ proxies:
   servername: fin1-r.bankai.party
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 172.64.79.163
-  port: 2083
-  udp: true
-  type: vless
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  tls: true
-  servername: vipfree.dr-ping.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: f0f0bet.fi2.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 537d8ade-134d-4ec2-905c-0187e7e1e22e
-  tls: true
-  reality-opts:
-    public-key: _oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY
-    short-id: cf2a731a5f2dc451
-  servername: f0f0bet.fi2.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -78,19 +48,13 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 107.181.151.128
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: fn1s.sublinkplas.ir
+  port: 53731
   udp: true
-  type: vless
-  uuid: 73cb2a0d-e2a9-4e61-a343-f2845e8c272e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 611ceeb0ae78
-  servername: www.tradingview.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +65,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,7 +75,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES

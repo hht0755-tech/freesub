@@ -6,17 +6,10 @@
     {
       "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "www.true.th",
-      "server_port": 80,
-      "uuid": "64b4f468-93af-451f-a721-171a2e9f314d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/myo",
-        "headers": {
-          "Host": "d1g0jlrlppl8b0.cloudfront.net"
-        }
-      }
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
