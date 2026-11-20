@@ -13,48 +13,40 @@ proxies:
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 217.30.10.44
-  port: 9076
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 217.30.10.44
-  port: 9071
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 217.30.10.70
-  port: 9057
+  server: 217.30.10.44
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: wjTugX3ZtHMB9c3Z
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 80.47.10.106
-  port: 443
+  server: 217.30.10.44
+  port: 9099
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 45.194.66.177
+  server: 82.40.63.138
   port: 443
   udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: ca60984f-b1f0-4073-bd33-4c75168f749a
+  sni: kraw-pl-4.fantoff.online
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 143.246.41.214
   port: 443
