@@ -13,7 +13,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "64.49.13.12",
+      "server": "tr.subscriptionservice.ir",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
       "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
