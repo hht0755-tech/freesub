@@ -19,19 +19,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 31.59.154.82
-  port: 8459
-  udp: true
-  type: vless
-  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
-    short-id: 0f0e381ec0c4690d
-  servername: nl-edge.airlinesvpn.com
-  client-fingerprint: ''
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 212.192.3.113
   port: 9543
   udp: true
@@ -44,7 +31,7 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: dg4.ianai.it.com
   port: 443
   udp: true
@@ -52,8 +39,8 @@ proxies:
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   sni: dg4.ianai.it.com
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 212.192.3.222
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 212.192.3.63
   port: 9543
   udp: true
   type: vless
@@ -65,6 +52,17 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: uae.unixzone.us
   port: 22573
@@ -74,8 +72,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
