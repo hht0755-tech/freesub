@@ -5,26 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "164.37.224.51",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "172.64.155.209",
       "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
       "tls": {
         "enabled": true,
-        "server_name": "15b171g.nl7.h1clayd.click",
+        "server_name": "sinavm2.soft10.ir",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE",
-          "short_id": "50a749f0eccb628c"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "5b79e8a94241"
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm2.soft10.ir"
+        }
       }
     },
     {
@@ -32,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
