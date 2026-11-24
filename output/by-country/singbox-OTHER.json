@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.64.155.209",
+      "server": "172.64.229.21",
       "server_port": 443,
-      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm2.soft10.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "path": "/ws",
         "headers": {
-          "Host": "sinavm2.soft10.ir"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
