@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https",
         "insecure": true
       }
     },
@@ -23,8 +23,29 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "116.213.43.43",
+      "server_port": 11102,
+      "uuid": "530d31fc-2690-49e4-bfc9-3f991e145008",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0",
+          "short_id": "ed571d022f7bc3bf"
+        }
       }
     },
     {
@@ -33,7 +54,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
       ]
     },
     {
@@ -41,7 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
